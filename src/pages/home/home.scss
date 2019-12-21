@@ -35,6 +35,63 @@ page-home {
                 }
  
             }
+            /******************categories************/
+           ion-grid
+           {
+               ion-row
+               {
+                .sperateSection
+                {
+                    background-color: #f3e717;
+                    padding: 10px;
+                    border: 2px solid white;  
+                    .con-head
+                        {
+                            margin: auto;
+                        }
+                    ion-col
+                    {
+                        border:none !important ;
+                        
+                        .con-image
+                        {
+                            @extend %con-image ;
+                            height: 77px;
+                        }
+                            
+                    }
+                }
+                ion-col
+                {   
+                    padding:0px; 
+                    border: 3px solid white;  
+                    .categoryData
+                    {
+                        position: relative;
+                        .con-image
+                        {
+                            height: 120px;
+                            background-size: cover;
+                            
+                        }
+                        
+                        .imageOverlay
+                        {
+                            @extend %overlayImage ;
+                            background-color:rgba(0,0,0,0.3);
+                            
+
+                            h6{
+                                position: absolute;
+                                bottom: 0;
+                                color: white;
+                            }
+                        }
+                    }
+                   
+                }
+               }
+           }
             
         }
     }
