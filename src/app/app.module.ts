@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { OnboardingScreenPage } from '../pages/onboarding-screen/onboarding-screen';
 import { CategoriesDataProvider } from '../providers/categories-data/categories-data';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CategoriesDataProvider } from '../providers/categories-data/categories-
   ],
   imports: [
     BrowserModule,
+    HttpClientModule ,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
