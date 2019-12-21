@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { OnboardingScreenPage } from '../pages/onboarding-screen/onboarding-screen';
+import { CategoriesDataProvider } from '../providers/categories-data/categories-data';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OnboardingScreenPage } from '../pages/onboarding-screen/onboarding-scre
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CategoriesDataProvider
   ]
 })
 export class AppModule {}
