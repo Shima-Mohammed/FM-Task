@@ -12,15 +12,15 @@
 
 
   <ion-header >
-    <ion-toolbar color=transperent>
+    <!-- <ion-toolbar color=transperent>
       <ion-buttons end>
         <button ion-button color="primary" (click)="skip()" >Skip</button>
       </ion-buttons>
-    </ion-toolbar>
+    </ion-toolbar> -->
   </ion-header>
   
   <ion-content >
-    <ion-slides pager >
+    <ion-slides pager  (ionSlideReachEnd)="skip()">
   
       <ion-slide  >
         

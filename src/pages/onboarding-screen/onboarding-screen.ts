@@ -24,7 +24,7 @@ export class OnboardingScreenPage {
   }
   skip()
   {
-    this.navCtrl.push(HomePage)
+    setTimeout(()=>{this.navCtrl.push(HomePage)},800)
   }
 
 }
