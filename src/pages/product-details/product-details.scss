@@ -1,3 +1,32 @@
 page-product-details {
+    ion-header
+    {
+        ion-navbar
+        {
+            .closeModal
+            {
+                margin: auto !important;
+                text-align: end !important;
+            }
+        }
+    }
+    ion-content
+    {
+        .conProductData
+        {
+            .clr
+            {
+                clear: both;
+            }
+            .title
+            {
+                margin-bottom: 10px;
+               span{
+                float: right;
+                color:#fc5c5c ;
+               }
+            }
+        }
 
+    }
 }

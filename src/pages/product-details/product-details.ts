@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the ProductDetailsPage page.
@@ -14,12 +14,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'product-details.html',
 })
 export class ProductDetailsPage {
+  product: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
+    this.product = this.navParams.get('product')
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductDetailsPage');
+  }
+  closeModal()
+  {
+    this.modalCtrl.dismiss()
   }
 
 }
