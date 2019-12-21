@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'category-details.html',
 })
 export class CategoryDetailsPage {
+  category;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.category=this.navParams.get('category');
   }
 
   ionViewDidLoad() {

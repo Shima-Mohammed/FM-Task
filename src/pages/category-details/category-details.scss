@@ -1,3 +1,26 @@
 page-category-details {
-
+    ion-header
+    {
+        ion-toolbar
+        {
+            position: fixed;
+            z-index: 2;
+        }
+        .headerImage
+        {
+            position: relative;
+            z-index: 1;
+            .con-image
+            {
+                height: 220px;
+                background-size: cover;
+            }
+            .imageOverlay
+            {
+                @extend %overlayImage ; 
+                background-color: rgba(0,0,0,.6);
+            }
+        }
+        
+    }
 }
