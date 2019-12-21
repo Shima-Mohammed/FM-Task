@@ -1,1 +1,32 @@
-<ion-nav [root]="rootPage"></ion-nav>
+
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Home</ion-title>
+            
+
+            <ion-buttons end>
+                <button ion-button menuClose icon-only>
+                    <ion-icon name="backspace" ></ion-icon>
+                </button>
+              </ion-buttons>
+
+            
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list >
+            
+            <button ion-item menuClose *ngFor="let category of categoryData" >
+              {{category.name}}
+            </button>
+            
+           
+          </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>
