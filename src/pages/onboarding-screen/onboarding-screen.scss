@@ -1,13 +1,13 @@
 page-onboarding-screen {
     overflow-y: hidden;
     .header-md
-        {
-            &::after{
-                background-image: none !important;
-            }
-                
-            
+    {
+        &::after{
+            background-image: none !important;
         }
+            
+        
+    }
     ion-header
     {
         
