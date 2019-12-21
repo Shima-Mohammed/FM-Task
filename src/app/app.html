@@ -18,7 +18,7 @@
     <ion-content>
         <ion-list >
             
-            <button ion-item menuClose *ngFor="let category of categoryData" >
+            <button ion-item menuClose *ngFor="let category of categoryData"  (click)="openCategoryDetails(category)">
               {{category.name}}
             </button>
             
