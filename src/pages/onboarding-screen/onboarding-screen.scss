@@ -1,7 +1,16 @@
 page-onboarding-screen {
     overflow-y: hidden;
+    .header-md
+        {
+            &::after{
+                background-image: none !important;
+            }
+                
+            
+        }
     ion-header
     {
+        
         ion-toolbar
         {
             .toolbar-background-md ,.toolbar-background-wp , .toolbar-background-ios
@@ -13,6 +22,55 @@ page-onboarding-screen {
                 border:none !important ;
             }
             
+            
         }
     }
+    ion-content
+   {
+       .scroll-content
+        {
+            margin-top: 0px !important;
+            overflow: hidden;
+            ion-slide
+            {
+                background-color: #f1f1f1;
+            
+                
+                .con-image {
+                    @extend %con-image ;
+                    height: 180px;
+                    margin-bottom: 50px;
+        
+                    
+                
+                }
+                .slideData
+                {
+                    padding: 0px 20px;
+                    text-align: center;
+                    h4{
+                        font-weight: bold;
+                    }
+                    p{
+                    line-height: 25px;
+                    font-size: 12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                    }
+                }
+                
+                
+            
+            }
+            .swiper-pagination-bullets
+            {
+                bottom: 30px !important;
+                .swiper-pagination-bullet
+                {
+                    border:1px solid black !important;
+                }
+            }
+        }
+   
+   }
 }
