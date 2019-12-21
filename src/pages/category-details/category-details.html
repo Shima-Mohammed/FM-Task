@@ -30,6 +30,26 @@
   </div>
 </ion-header>
 
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6  *ngFor="let product of category.products" >
+        <div class="con-image" >
+          <img src="{{product.product_img}}">
+        </div>
+        <div class="productData">
+          <h5>{{product.name}}</h5>
+          <h6>{{product.weight}}</h6>
+          <h6>{{product.price}}</h6>
+        </div>
+      </ion-col>
+    </ion-row>
+   
+  </ion-grid>
+</ion-content>
+
+
 <ion-footer>
   <ion-toolbar color="primary">
     <ion-grid>

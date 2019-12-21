@@ -23,6 +23,51 @@ page-category-details {
         }
         
     }
+
+    ion-content 
+    {
+        .scroll-content
+        {
+            padding: 0px !important;
+            margin-top:0;
+            overflow: auto;
+        }
+        ion-grid
+        {
+            padding: 0px !important;
+            ion-row
+            {
+                ion-col
+                {
+                    padding: 10px !important;
+                    border:1px solid #eee;
+                    .con-image
+                {
+                    @extend %con-image ; 
+                    height: 80px;
+                }
+                .productData
+                {
+                   
+                    h5{
+                        font-size: 17px;
+                        margin-bottom: 10px;
+                        font-weight: bold ;
+                        margin-top: 10px !important;
+                    }
+                    h6{
+                        font-size: 13px ;
+                        margin-bottom: 5px ;
+                        margin-top: 0px;
+                        font-weight: normal ;
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    
     ion-footer
     {
         ion-toolbar
