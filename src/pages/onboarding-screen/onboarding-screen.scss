@@ -1,5 +1,14 @@
 page-onboarding-screen {
     overflow-y: hidden;
+    .splashSection
+    {
+        @extend %con-image ;
+        height: 100%;
+        z-index: 55555555 ;
+        background-color: rgb(253,103,104);
+        
+
+    }
     .header-md
     {
         &::after{

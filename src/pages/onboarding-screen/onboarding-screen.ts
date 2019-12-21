@@ -15,12 +15,12 @@ import { HomePage } from '../home/home';
   templateUrl: 'onboarding-screen.html',
 })
 export class OnboardingScreenPage {
-
+  splashVal = true ; 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-  
+    setTimeout(()=>{this.splashVal = false},3000)
   }
   skip()
   {
