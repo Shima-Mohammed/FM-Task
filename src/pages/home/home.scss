@@ -1,3 +1,5 @@
+
+
 page-home {
     ion-content
     {
@@ -96,6 +98,14 @@ page-home {
         }
     }
 }
+$slide: slider1 , slider2 ; 
+@each $slider in $slide {
+    .#{$slider}
+    {
+        background-image: url(../../assets/imgs/homeSlider/#{$slider}.jpg);
+    }
+}
+
 
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before
 {

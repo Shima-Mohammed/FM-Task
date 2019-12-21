@@ -20,7 +20,7 @@ export class OnboardingScreenPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OnboardingScreenPage');
+  
   }
   skip()
   {

@@ -10,10 +10,10 @@ import { CategoryDetailsPage } from '../category-details/category-details';
 export class HomePage {
 
   categoriesData  ; 
-
   constructor(private NavCtr:NavController,private categoriesAPI : CategoriesDataProvider,public navCtrl: NavController) {
     this.categoriesAPI.getCategoriesData().then(res=>this.categoriesData = res)
   }
+  
 
   openCategoryDetails(category)
   {

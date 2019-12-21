@@ -1,90 +1,85 @@
 
-<ion-header>
-  <!----------page toolbar-->
-  <ion-toolbar color="white">
-    
-    <ion-buttons >
-      <button ion-button menuToggle icon-only>
-        <ion-icon name='menu'></ion-icon>
-      </button>
-    </ion-buttons>
-    
-    <ion-buttons end>
-      <button ion-button icon-only >
-        <ion-icon name="search"></ion-icon>
-      </button>
+ 
+
+  <ion-header >
+    <!----------page toolbar-->
+    <ion-toolbar color="white">
       
-      <button ion-button icon-only >
-        <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
-  <!-------------------->
-</ion-header>
-
-<ion-content padding>
-
-  <!---------------image slider---->
-  <ion-slides pager autoplay="900" loop="true"  speed="1000">
-
-    <ion-slide >
-      <div class="con-image" style="background-image: url(../../assets/imgs/slider/slider1.jpg);">
-        <!-- <img src="../../assets/imgs/slider/slider1.jpg"> -->
-      </div>
-    </ion-slide>
-  
-    <ion-slide >
-      <div class="con-image"  style="background-image: url(../../assets/imgs/slider/slider2.jpg);">
+      <ion-buttons >
+        <button ion-button menuToggle icon-only>
+          <ion-icon name='menu'></ion-icon>
+        </button>
+      </ion-buttons>
       
-      </div>
-    </ion-slide>
-
-    <ion-slide >
-      <div class="con-image" style="background-image: url(../../assets/imgs/slider/slider2.jpg);">
-       
-      </div>
-    </ion-slide>
+      <ion-buttons end>
+        <button ion-button icon-only >
+          <ion-icon name="search"></ion-icon>
+        </button>
+        
+        <button ion-button icon-only >
+          <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+    <!-------------------->
+  </ion-header>
   
+  <ion-content padding>
+  
+    <!---------------image slider---->
+    <ion-slides pager autoplay="900" loop="true"  speed="1000">
+  
+      <ion-slide >
+        <div class="con-image slider1" >
+          
+        </div>
+      </ion-slide>
     
+      <ion-slide >
+        <div class="con-image slider2"  >
+        
+        </div>
+      </ion-slide>
   
-  </ion-slides>
-  <!----------------------------->
-  <!----------------categories-------->
-  <ion-grid>
-    <ion-row>
-      <ng-container *ngFor="let category of categoriesData ; index as i">
-        <ion-col col-6   (click)="openCategoryDetails(category)">
-          <div class="categoryData" >
-            <div class="con-image" [style.background-image]="'url('+category.category_img+')'">
-              
-            </div>
-            <div class="imageOverlay">
-              <h6>{{category.name}}</h6>
-            </div>
-          </div>
-        </ion-col>
-      
-        <ion-col class="sperateSection" col-12 *ngIf="i%2 !=0 && i!= categoriesData.length-1">
-          <ion-row>
-            <ion-col col-6>
-              <div class="con-image">
-                <img src="../../assets/imgs/zucchini.png">
+    </ion-slides>
+    <!----------------------------->
+    <!----------------categories-------->
+    <ion-grid>
+      <ion-row>
+        <ng-container *ngFor="let category of categoriesData ; index as i">
+          <ion-col col-6   (click)="openCategoryDetails(category)">
+            <div class="categoryData" >
+              <div class="con-image" [style.background-image]="'url('+category.category_img+')'">
+                
               </div>
-            </ion-col>
-            <ion-col class="con-head" col-6>
-              <h6>Lorem ipsum dolor sit amet.</h6>
-            </ion-col>
-          </ion-row>
-        </ion-col>
-    
-      </ng-container>
+              <div class="imageOverlay">
+                <h6>{{category.name}}</h6>
+              </div>
+            </div>
+          </ion-col>
+        
+          <ion-col class="sperateSection" col-12 *ngIf="i%2 !=0 && i!= categoriesData.length-1">
+            <ion-row>
+              <ion-col col-6>
+                <div class="con-image">
+                  <img src="../../assets/imgs/zucchini.png">
+                </div>
+              </ion-col>
+              <ion-col class="con-head" col-6>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+              </ion-col>
+            </ion-row>
+          </ion-col>
       
-    </ion-row>
-
-  </ion-grid>
-  <!------------------------------->
+        </ng-container>
+        
+      </ion-row>
   
-  <!------------------------------->
-</ion-content>
+    </ion-grid>
+    <!------------------------------->
+    
+    <!------------------------------->
+  </ion-content>
+
 
 
