@@ -1,3 +1,18 @@
 page-onboarding-screen {
-
+    overflow-y: hidden;
+    ion-header
+    {
+        ion-toolbar
+        {
+            .toolbar-background-md ,.toolbar-background-wp , .toolbar-background-ios
+            {
+                background-color: #f1f1f1 !important;
+            }
+            .toolbar-background-ios
+            {
+                border:none !important ;
+            }
+            
+        }
+    }
 }
