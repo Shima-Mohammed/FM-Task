@@ -34,7 +34,7 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col col-6  *ngFor="let product of category.products" >
+      <ion-col col-6  *ngFor="let product of category.products" (click)="openProductDetails(product)">
         <div class="con-image" >
           <img src="{{product.product_img}}">
         </div>

@@ -10,13 +10,15 @@ import { OnboardingScreenPage } from '../pages/onboarding-screen/onboarding-scre
 import { CategoriesDataProvider } from '../providers/categories-data/categories-data';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryDetailsPage } from '../pages/category-details/category-details';
+import { ProductDetailsPage } from '../pages/product-details/product-details';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage , 
     OnboardingScreenPage , 
-    CategoryDetailsPage
+    CategoryDetailsPage ,
+    ProductDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { CategoryDetailsPage } from '../pages/category-details/category-details'
     MyApp,
     HomePage , 
     OnboardingScreenPage  , 
-    CategoryDetailsPage
+    CategoryDetailsPage ,
+    ProductDetailsPage
   ],
   providers: [
     StatusBar,
